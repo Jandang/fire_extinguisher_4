@@ -92,13 +92,26 @@ function Assignment({ searchValue }) {
           ? { ...item, status: "Assigned", assignedTo: inputValue }
           : item
       );
-
-      // เก็บเฉพาะข้อมูลที่ถูกมอบหมายใน Local Storage
-      const assignedData = updatedFireInfo.filter(
-        (item) => item.status === "Assigned"
+  
+      // ดึงข้อมูลจาก Local Storage แล้วอัปเดตเฉพาะรายการที่เปลี่ยนแปลง
+      const localData = JSON.parse(localStorage.getItem("fireExtinguisher")) || [];
+      const updatedLocalData = localData.map((item) =>
+        item.serialNumber === selectedRow.serialNumber
+          ? { ...item, status: "Assigned", assignedTo: inputValue }
+          : item
       );
-      localStorage.setItem("fireExtinguisher", JSON.stringify(assignedData));
-
+  
+      // ตรวจสอบว่ามีข้อมูลใหม่ที่ยังไม่มีใน Local Storage หรือไม่
+      const newItems = updatedFireInfo.filter(
+        (item) => !updatedLocalData.some((localItem) => localItem.serialNumber === item.serialNumber)
+      );
+  
+      // รวมข้อมูลใหม่เข้ากับข้อมูลที่มีอยู่
+      const mergedData = [...updatedLocalData, ...newItems];
+  
+      // บันทึกข้อมูลกลับไปยัง Local Storage
+      localStorage.setItem("fireExtinguisher", JSON.stringify(mergedData));
+  
       setFireInfo(updatedFireInfo);
       setFilteredData(updatedFireInfo.filter((item) => item.status === "Assigned" || item.status === "Assign"));
       setIsAssignment(false); // ปิด modal
@@ -106,6 +119,7 @@ function Assignment({ searchValue }) {
       setIsValid(false); // รีเซ็ต isValid
     }
   };
+  
 
   return (
     <div>
