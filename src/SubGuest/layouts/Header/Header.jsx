@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import './Header.css';
 // import { Notification02Icon } from 'hugeicons-react';
-import { UserCircle02Icon, Login01Icon } from 'hugeicons-react';
+import { UserCircle02Icon } from 'hugeicons-react';
 import Dropdown from 'react-bootstrap/Dropdown';
 
 function Header({ name_surname }) {
@@ -30,7 +30,7 @@ function Header({ name_surname }) {
             <div className='left'>
                 <span>
                     <img 
-                        src="/img/whiteLogo.png"
+                        src="./img/whiteLogo.png"
                         alt="LOGO"
                         style={{ height: '50px',marginLeft: '20px' }}
                     />

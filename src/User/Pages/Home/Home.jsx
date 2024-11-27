@@ -76,7 +76,7 @@ function Home({ fireInfo }) {
 
                 <div className="home-header">
                     <div>
-                        <img src="/img/logo1.svg" alt="" className="logo-container-user" />
+                        <img src="./img/logo1.svg" alt="" className="logo-container-user" />
                     </div>
                     <span>
                         <input

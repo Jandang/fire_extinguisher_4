@@ -36,7 +36,7 @@ function Login({ setToken, setRole, setUsername, setName_surname }) {
   return (
     <div className="login-container-background">
       <div className="login-container login-background">
-        <img src="/img/Metthier Master Logo.png" alt="logo" className="logo1" />
+        <img src="./img/MasterLogo.png" alt="logo" className="logo1" />
         <div className="username-input-container">
           <Form.Control
             type="text"

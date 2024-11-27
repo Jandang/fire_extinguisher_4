@@ -24,7 +24,7 @@ function Header({ name_surname, setName_surname, setToken, setRole, setUsername 
       <header className="navbarAdmin">
         <Link to={'/'}>
           <div className="whiteLogo">
-            <img src="/img/whiteLogo.png" className="Logo" />
+            <img src="./img/whiteLogo.png" className="Logo" />
           </div>
         </Link>
         <div className='notificationContainer'>
