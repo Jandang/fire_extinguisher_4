@@ -1,0 +1,246 @@
+.fire-header {
+    display: flex;
+}
+
+.back-icon {
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    color: #FD6E2B;
+}
+
+.firedetails-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'prompt', sans-serif;
+    width: calc(320px - 35px);
+    margin: auto;
+}
+
+.firedetails-image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-left: 5px;
+}
+
+.firedetails-image {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(225, 225, 225);
+    object-fit: cover;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* margin-bottom: 1rem; */
+    cursor: pointer;
+    border-radius: 20px;
+    /* margin: 5px; */
+}
+
+/* .button-remove-img {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    color: #fd6d2bc2;
+    font-size: 25px;
+    z-index: 500;
+    bottom: 107px;
+    left: 65px;
+} */
+
+.file-label {
+    width: 100px;
+    height: 100px;
+    color: #ffffff;
+    background-color: #473366;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.file-img-input {
+    display: none;
+}
+
+.bi-box-arrow-in-down {
+    font-size: 40px;
+    font-weight: 500;
+    color: #888888;
+}
+
+.firedetails-report-1 {
+    width: 340px;
+    height: max-content;
+    font-family: 'prompt', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #FD6E2B;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 1rem 1rem;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+.report-note {
+    width: 340px;
+    height: max-content;
+    font-family: 'prompt', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: solid 1px #000000;
+    border-radius: 15px;
+    padding: 1rem 1rem;
+    margin: 1rem auto;
+    text-align: left;
+    resize: vertical;
+    /* ให้ผู้ใช้ปรับความสูงได้ถ้าต้องการ */
+    overflow-wrap: break-word;
+    /* ให้เคาะบรรทัดอัตโนมัติเมื่อข้อความยาวเกินไป */
+    white-space: pre-wrap;
+    /* รักษารูปแบบการขึ้นบรรทัดใหม่ของผู้ใช้ */
+}
+
+.report-note::placeholder {
+    font-family: 'prompt', sans-serif;
+}
+
+
+.firedetails-button-container {
+    text-decoration: none;
+    color: inherit;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firedetails-button {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'prompt', sans-serif;
+    color: #F2F2E6;
+    background-color: #FD6E2B;
+    border: transparent;
+    border-radius: 28px;
+    padding: 5px 16px;
+    cursor: pointer;
+    height: max-content;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.firedetails-time {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'prompt', sans-serif;
+    width: 330px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.firedetails-info {
+    font-family: 'prompt', sans-serif;
+    width: 330px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.firedetails-check {
+    font-family: 'prompt', sans-serif;
+    width: 330px;
+    margin: auto;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.firedetails-radio {
+    font-family: 'prompt', sans-serif;
+    width: 330px;
+    margin: auto;
+    font-size: 16px;
+    text-align: left;
+    color: #000000;
+}
+
+.form-check-input[type="radio"] {
+    border-color: #000000;
+    border-width: 2px;
+}
+
+.form-check-input[type="radio"]:checked {
+    background-color: #FD6E2B;
+    border-color: #FD6E2B;
+}
+
+.form-check-input[type="radio"]:focus {
+    border-color: #FD6E2B;
+    box-shadow: 0 0 0 0.25rem rgba(253, 110, 43, 0.25);
+}
+
+.fire-body {
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: 620px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0;
+    animation: popOut 0.3s ease-in-out forwards;
+}
+
+.popup-icon {
+    font-size: 60px;
+    color: #FD6E2B;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'prompt', sans-serif;
+    margin: 0;
+}
+
+@keyframes popOut {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        /* เริ่มต้นขนาดเล็ก */
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        /* ขยายเล็กน้อย */
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        /* ขนาดปกติ */
+        opacity: 1;
+    }
+}

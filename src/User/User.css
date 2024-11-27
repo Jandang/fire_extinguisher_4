@@ -1,0 +1,14 @@
+.user-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 375px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: max-content;
+}
+.user-container .marvel-device {
+    transform: scale(0.68); /* ลดขนาดเฟรมมือถือ (0.8 เท่าของขนาดเดิม) */
+    transform-origin: top ; /* ตั้งค่าจุดเริ่มต้นของการปรับขนาด */
+}

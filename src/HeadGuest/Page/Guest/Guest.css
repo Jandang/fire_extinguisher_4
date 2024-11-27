@@ -1,0 +1,29 @@
+.App-container{
+    text-align: center;
+  }
+  
+  .in-container {
+    display: flex;
+    justify-content: center; /* จัดตรงกลางแนวนอน */
+    align-items: center;     /* จัดตรงกลางแนวตั้ง */
+    height: 85vh;           /* ให้ความสูงเต็มหน้าจอ */          /* เพิ่มระยะห่างรอบๆ */
+    box-sizing: border-box;
+  }
+  
+  .info-container-main {
+    display: flex;
+    /* ควบคุมความกว้างของ container เพื่อให้เหมาะสม */
+    max-width: 100%; /* หรือกำหนดความกว้างตามต้องการ */
+    width: 90%;
+  }
+  
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .right-column {
+    flex: 1;
+  }
+  

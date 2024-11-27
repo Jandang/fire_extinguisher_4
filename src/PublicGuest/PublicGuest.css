@@ -1,0 +1,99 @@
+.mobile-container {
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    height: 100vh;
+}
+
+.mobile-container .border {
+    border-color: #000 !important;
+    border-width: 1px !important;
+}
+
+/* Card body border styling */
+.card-body .main {
+    border: 1px solid #000000;
+    border-radius: 0.375rem;
+    padding: 1.25rem;
+    text-align: left;
+    width: 330px;
+}
+.card-body {
+    border: 1px solid #000000;
+    border-radius: 0.375rem;
+    padding: 1.25rem;
+    text-align: left;
+}
+
+/* Ensure the card doesn't have double borders */
+.card.border {
+    border: none !important;
+}
+
+
+
+/* .publicGuestContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.publicGuestContainer .marvel-device {
+    transform: scale(0.68);
+    transform-origin: center;
+}
+
+.screenTitle {
+    text-align: center;
+    margin-top: 60px;
+    color: #473366;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'prompt', sans-serif;
+}
+
+.guestImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.guestImage img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    border: #473366 2px solid;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+.guestInfo {
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: #473366 2px solid;
+    width: 300px;
+    height: max-content;
+    padding: 5px 10px;
+}
+
+.guestInfo p {
+    margin: 0;
+}
+
+.guestButton {
+    width: 100%;
+}
+.guestButton button {
+    margin: auto;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #473366;
+    color: #ffffff;
+    border: none;
+} */

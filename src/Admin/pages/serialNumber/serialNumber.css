@@ -1,0 +1,120 @@
+.containerSerial {
+  font-family: 'prompt', sans-serif;
+  max-width: 100%;
+  width: 60%;
+  margin: auto;
+  background-color: #ffffff;
+  border: 1.5px solid #000 ;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+.report-details-container {
+  font-size: 16px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.reportInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  width: 95%;
+}
+.reportChecklist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  width: 95%;
+}
+
+.snHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #FD6E2B;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.ttHeader {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+}
+.closeSerial {
+  font-size: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.checklist {
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.item label {
+  flex: 1;
+  color: #333;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+.note {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+  margin-left: 10px;
+}
+
+.fire-extinguisher-img {
+  max-height: 150px;
+  margin-left: 1rem;
+}
+.reportButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 10px;
+  width: 90%;
+}
+.buttonFailed, .buttonPass {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+.buttonFailed {
+  background-color: #ec2727;
+  color: white;
+  border: 2px solid #000000;
+}
+.buttonPass {
+  background-color: #23b223;
+  color: white;
+  border: 2px solid #000000;
+}

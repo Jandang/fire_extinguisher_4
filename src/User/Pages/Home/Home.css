@@ -1,0 +1,154 @@
+.home-container {
+  max-width: 375px;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  justify-items: center;
+  place-items: center;
+  padding: 0 16px;
+}
+
+.logo-container-user {
+  width: 25px;
+}
+
+.search-bar::placeholder {
+  text-align: center;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.search-bar {
+  width: 250px;
+  height: 40px;
+  border-radius: 25px;
+  border: solid 1px #b3b4ad;
+  font-size: 18px;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'Unbounded', 'Prompt', sans-serif;
+}
+
+.bell-icon {
+  font-size: 30px;
+  color: #FD6E2B;
+}
+
+.home-header {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  z-index: 1000;
+}
+
+.home-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  margin: 0;
+  height: 620px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  width: 100%;
+  font-family: 'prompt', sans-serif;
+}
+
+.fire-card-link {
+  text-decoration: none;
+  color: inherit;
+  /* ให้ลิงก์มีสีเหมือนกับข้อความรอบข้าง */
+}
+
+.fire-card-body:hover {
+  background-color: #FD6E2B;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.fire-card-body {
+  border: none !important;
+}
+
+.no-data-message {
+  text-align: center;
+  margin: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fd6d2b91;
+  font-family: 'prompt', sans-serif;
+}
+
+.home-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 375px;
+  background-color: white;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.pagination-button-user {
+  background-color: transparent !important;
+  color: #FD6E2B !important;
+  /* border: 3px solid #FD6E2B !important; */
+  border-radius: 50% !important;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 30px !important;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  padding: 0  !important;
+  width: 55px !important;
+  height: 55px !important;
+  box-shadow: none !important;
+  
+}
+
+.pagination-button-user:hover {
+  background-color: #FD6E2B !important;
+  color: #ffffff !important;
+}
+
+.pagination-button-user:disabled:hover {
+  background-color: #999999 !important;
+  color: #ffffff !important;
+}
+.pagination-button-user:disabled {
+  background-color: transparent !important;
+  color: #999999 !important;
+  border-color: #999999 !important;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  font-family: 'prompt', sans-serif;
+  color: #FD6E2B !important;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}

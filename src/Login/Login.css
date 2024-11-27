@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap");
+.login-container-background {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)), 
+  url('https://cms.metthier.co.th/wp-content/uploads/2023/10/3Homepage2.webp');
+  background-size: cover;
+  background-position: center;
+}
+.login-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  grid-template-areas:
+    "logo logo logo logo"
+    "username username username username"
+    "password password password password"
+    "button button button button";
+  margin: 16px;
+  text-align: center;
+  justify-items: center;
+  place-items: center;
+}
+.login-background {
+    background-color: #ffffff;
+    width: 600px;
+    height: 500px;
+    display: flex; /* ใช้ Flexbox */
+    flex-direction: column; /* แนวตั้ง */
+    align-items: center; /* จัดกลางแนวนอน */
+    justify-content: center; /* จัดกลางแนวตั้ง */
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px #473366d0;
+}
+.logo1 {
+  grid-area: logo;
+  width: 300px;
+  margin: 0 auto;
+}
+.username-input {
+  grid-area: username;
+  font-size: 20px;
+}
+.password-input {
+  grid-area: password;
+  font-size: 20px;
+}
+.btn.login-button:hover {
+  background-color: #473366;
+  color: #F2F2E6;
+}
+.btn.login-button {
+  margin: 0 auto;
+  grid-area: button;
+  background-color: #473366;
+  border: transparent;
+  width: 112px;
+  height: 55px;
+  border-radius: 28px;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 24px;
+  padding: 5px 16px;
+  color: #F2F2E6;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+input::placeholder {
+    font-family: 'Unbounded', sans-serif;
+    color: #B3B4AD;
+    font-size: 20px;
+}
+input::-webkit-input-placeholder {
+    font-family: 'Unbounded', sans-serif;
+}
+.guestButton {
+  border: none;
+  background-color: transparent;
+  color: #dc3545;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 20px;
+  padding: 5px 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}

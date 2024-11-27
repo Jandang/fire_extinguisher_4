@@ -1,0 +1,461 @@
+/* header */
+.navbarSuperAdmin {
+  width: 100%;
+  height: 100px;
+  background-color: #fd6e2b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.whiteLogo {
+  margin: 20px;
+
+}
+
+.logo {
+  width: 100px;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.custom-dropdown-menu {
+  display: inline-flex;  /* ใช้ flex เพื่อให้ขนาดพอดีกับปุ่ม */
+  min-width: auto;       /* ปรับขนาดตามเนื้อหาภายใน */
+}
+
+.logout {
+  padding: 0.6rem 1.2rem; /* กำหนด padding ให้พอเหมาะ */
+  font-size: 1rem;         /* ขนาดตัวอักษรให้พอดีกับชื่อผู้ใช้ */
+}
+
+.user-menu .dropdown-toggle {
+  display: flex;          /* ใช้ flex กับ toggle */
+  align-items: center;    /* จัดให้ตัวอักษรและไอคอนอยู่ตรงกลาง */
+}
+
+/* body */
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex; /* ใช้ Flexbox */
+  align-items: stretch; /* ปรับให้ child มีความสูงเท่ากัน */
+}
+
+
+
+.col-md-4,
+.col-md-8 {
+  padding: -24px;
+  display: flex;
+  flex-direction: column; /* ให้ child ภายในเรียงในแนว column */
+}
+
+.mb-3 {
+  text-align: center;
+}
+
+.card {
+  flex-grow: 1; /* ทำให้ card ขยายเพื่อเติมเต็มพื้นที่ */
+  display: flex;
+  flex-direction: column; /* เพื่อจัดการเนื้อหาในแนว column */
+}
+
+.dropdown {
+  text-align: left;
+  width: fit-content;
+}
+
+
+.SA-container {
+  /* border: 1px solid #473366; */
+  padding: 20px auto;
+  /* max-width: 1200px; */
+  min-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.manage-bar {
+  /* border: 1px solid #473366; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.manage-unit-button,
+.manage-user-button {
+  width: 200px;
+  padding: 8px 16px;
+  border: 1px solid #473366;
+  box-shadow: 0px 0px 2px #473366;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: larger;
+  color: #000000;
+  cursor: pointer;
+}
+
+.manage-unit-button:hover,
+.manage-user-button:hover {
+  background-color: #9277BB;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  width: fit-content;
+  height: 50px;
+  border: 1px solid #473366;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-left: 5px;
+}
+
+.search {
+  font-size: 1.2em;
+}
+
+.search-input-container {
+  display: flex;
+  justify-content: right;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  padding: 4px;
+  max-width: 100%;
+  width: fit-content;
+  /* ถ้าแก้เป็น 100% ต้องไปแก้อีกยาวเลย เฮ้อๆ */
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 8px;
+  font-size: 14px;
+  color: #4f4f4f;
+  width: 500px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  padding: 4px;
+  max-width: 100%;
+}
+
+.bi-search {
+  padding-left: 20px;
+}
+
+.filter-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* footer */
+.dashboard {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  color: #4F4F4F;
+}
+
+.card-header {
+  background-color: #FD6E2B;
+  padding: 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.card-body {
+  border: 1px solid #473366;
+  border-radius: 8px;
+}
+
+.card {
+  border: 1px solid #C4B2E4;
+  border-radius: 8px;
+  /* overflow: hidden; */
+}
+
+
+.table-container {
+  border: 1px solid #C4B2E4;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px 16px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background-color: #FD6E2B;
+  color: #000000;
+}
+
+tr:nth-child(even) {
+  background-color: #F9F9F9;
+}
+
+/* เลือกหน้า */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-group-left {
+  display: flex;
+  gap: 10px;
+}
+
+.pagination-group-right {
+  display: flex;
+  gap: 10px;
+}
+
+
+.pagination button {
+  background-color: #FD6E2B;
+  /* สีพื้นหลังหลัก */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  /* เงา */
+  justify-content: space-between;
+}
+
+.pagination button:hover {
+  background-color: #FEB390;
+  /* สีเมื่อโฮเวอร์ */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  /* เพิ่มเงาเมื่อโฮเวอร์ */
+  color: #473366;
+}
+
+.pagination button:disabled {
+  background-color: #B3B4AD;
+  /* สีพื้นหลังเมื่อ disabled */
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.pagination span {
+  font-size: 16px;
+  margin: 0 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: white;
+}
+
+.checked {
+  background-color: #3BB54A;
+}
+
+.pending {
+  background-color: #FFD966;
+  color: #4F4F4F;
+}
+
+.unchecked {
+  background-color: #E06666;
+}
+
+/* notification and username */
+.noti {
+  margin-right: 10px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+}
+
+.user {
+  margin-right: 10px;
+}
+
+/* Overlay สำหรับครอบหน้าจอทั้งหมดเมื่อ pop-up เปิดอยู่ */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* pop-up */
+.modal-popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: center;
+}
+
+/* ปุ่มปิด pop-up */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ปุ่มยืนยัน */
+.confirm-button{
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  width: 60px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: 'prompt', sans-serif;
+}
+.cancel-button {
+  margin: 5px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  width: 60px;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: 'prompt', sans-serif;
+}
+
+.confirm-button:hover {
+  background-color: #e64a19;
+}
+
+/* ช่อง input */
+.modal-popup input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* สไตล์สำหรับ header ของ modal */
+.modal-popup h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* logout dropdown ยังไม่ได้ใช้ */
+.user-menu .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  color: #333;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+
+/*logout*/
+.no-hover {
+  color: white !important;
+  /* คงสีข้อความเดิม */
+  background-color: transparent !important;
+  /* คงพื้นหลังเดิม */
+  border: none !important;
+  /* ปิดขอบ */
+}
+
+.no-hover:hover,
+.no-hover:focus,
+.no-hover:active {
+  color: white !important;
+  /* ไม่เปลี่ยนสีข้อความ */
+  background-color: transparent !important;
+  /* ไม่เปลี่ยนสีพื้นหลัง */
+  text-decoration: none !important;
+  /* ไม่เพิ่มเส้นใต้ */
+  outline: none !important;
+  /* ลบกรอบที่เกิดจากการคลิก */
+  box-shadow: none !important;
+  /* ลบเอฟเฟกต์ของ Bootstrap */
+}
+
+.no-caret::after {
+  display: none !important;
+}

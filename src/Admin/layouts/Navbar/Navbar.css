@@ -1,0 +1,77 @@
+.navbar-container{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container{
+  display: flex;
+  gap: 10px; /* กำหนดระยะห่างระหว่างปุ่ม */
+  justify-content: space-between;
+  width: 85%;
+  margin: 20px;
+  
+}
+
+.filter-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+} 
+
+
+
+.assignment-button-admin, .check-button-admin {
+  padding: 8px 16px;
+  border: 1px solid #473366 !important;
+  box-shadow: 0px 0px 2px #473366 !important;
+  border-radius: 20px;
+  background-color: transparent !important;
+  font-size: larger;
+  color: #4f4f4f;
+  cursor: pointer;
+  background-color: #efefef;
+  width: 200px;
+}
+
+/* .search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 1em;
+  color: #555;
+} */
+
+.search-input-container-admin {
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee !important; /* สีพื้นหลัง */
+  border: 1px solid #473366;
+  border-radius: 20px; /* ความโค้งของขอบ */
+  width: 100% !important; /* กำหนดความกว้างตามที่ต้องการ */
+  max-width: 100%;
+}
+/* .search-bar input::placeholder {
+  color: #555;
+} */
+
+.search-input-admin {
+  border: none;
+  outline: none;
+  background-color: transparent !important;
+  color: #000000;
+  width: 100%;
+  font-size: 18px;
+  padding: 8px 16px;
+}
+.search-input-admin::placeholder {
+  color: #4f4f4f;
+  font-size: 18px;
+  font-family: 'prompt', sans-serif;
+}
+
+* {
+  font-family: 'prompt', sans-serif;
+}

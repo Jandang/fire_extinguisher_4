@@ -1,0 +1,11 @@
+.publicGuestContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.publicGuestContainer .marvel-device {
+    transform: scale(0.68);
+    transform-origin: center;
+}

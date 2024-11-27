@@ -1,0 +1,132 @@
+/* Table.css */
+.dashboard-container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Card Styling */
+.dashboard-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  border: 1px solid #473366;
+}
+
+.dashboard-card-body {
+  padding: 1.5rem;
+}
+
+/* Typography */
+.dashboard-title {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+/* Search Input Styling */
+.search-container {
+  /* margin-top: 10px; */
+  position: relative;
+  width: 200px;
+}
+
+.search-input {
+  padding-left: 2.5rem !important;
+  border-radius: 8px;
+  font-size: 0.875rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: #6c757d;
+}
+
+.clear-button {
+  border-radius: 8px;
+  font-size: 0.875rem;
+  border: 1px solid #6c757d;
+}
+
+/* Status Select */
+.status-select {
+  margin-top: 10px;
+  width: 150px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+}
+
+/* Table Container */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Custom DataTable Styling */
+.custom-datatable {
+  width: 100%;
+
+}
+
+/* DataTable Custom Styles */
+.rdt_Table {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+.rdt_TableHead .rdt_TableHeadRow {
+  background-color: #FD6E2B !important;
+  color: #FFFFFF !important;
+}
+
+.rdt_TableHead .rdt_TableCol {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.rdt_TableBody .rdt_TableRow .rdt_TableCell {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Status Badges */
+.bg-success {
+  background-color: #13795b !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+/* .modal-content-wrapper {
+
+} */
+.modal-content-wrapper p {
+  margin-bottom: 0;
+}
+.checklist {
+  margin-bottom: 1rem;
+}
+.reporterName {
+  margin-bottom: 10px;
+}
+.reporterName::placeholder, .reporterDetails::placeholder {
+  font-family: 'prompt', sans-serif;
+}
+.reporterName:focus, .reporterDetails:focus {
+  box-shadow: none;
+  border-color: #FD6E2B;
+}

@@ -1,0 +1,30 @@
+.App-container{
+    text-align: center;
+  }
+  
+  .in-container {
+    display: flex;
+    justify-content: center; /* จัดตรงกลางแนวนอน */
+    align-items: center;           /* ให้ความสูงเต็มหน้าจอ */          /* เพิ่มระยะห่างรอบๆ */
+    box-sizing: border-box;
+  }
+  
+  .info-container-main {
+    display: flex;
+    max-width: 100%;
+    width: 85%;
+    position: absolute;
+    top: 15%;
+
+  }
+  
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .right-column {
+    flex: 1;
+  }
+  
