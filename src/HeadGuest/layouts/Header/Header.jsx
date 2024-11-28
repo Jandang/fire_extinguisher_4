@@ -14,7 +14,7 @@ function Header({ name_surname }) {
         localStorage.removeItem('authToken');
 
         // Redirect to login page
-        window.location.href = '/login';
+        window.location.href = '/';
 
         // Optional: Clear any other user-related data
         localStorage.removeItem('userInfo');

@@ -44,9 +44,13 @@ function Scanqrcode() {
 
     // เรียกใช้ capture ทุกๆ 1 วินาที
     useEffect(() => {
-        const interval = setInterval(capture, 1000);
+        const interval = setInterval(capture, 500);
         return () => clearInterval(interval);
     }, []);
+
+    const videoConstraints = {
+        facingMode: "environment", // ใช้กล้องหลัง
+    };
 
     return (
         <div className="scanqrcode-container">
@@ -60,17 +64,18 @@ function Scanqrcode() {
                 <Webcam
                     ref={webcamRef}
                     audio={false}
+                    videoConstraints={videoConstraints}
                     screenshotFormat="image/jpeg"
                     className="webcam-canvas"
                 />
-                
+
             </div>
             <Link to={`/fire-details/${qrcodeScan}`}>
-            <button
-                onClick={capture}
-                className={`scan-button ${isScanned ? "scanned" : ""}`} disabled={!isScanned}>
-                <span className="bi bi-check-lg scan-icon"></span>
-            </button>
+                <button
+                    onClick={capture}
+                    className={`scan-button ${isScanned ? "scanned" : ""}`} disabled={!isScanned}>
+                    <span className="bi bi-check-lg scan-icon"></span>
+                </button>
             </Link>
         </div>
     );

@@ -47,7 +47,7 @@ function Profile({ username, name_surname, setToken, setRole, setUsername, setNa
         <div className="profile-main">
           <div className="profile-img">
             <img
-              src={profileImage || "public/img/user.jpg"}
+              src={profileImage || "./img/user.jpg"}
               alt="Profile"
               className="profile-image"
             />
